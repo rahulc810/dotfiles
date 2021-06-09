@@ -4,6 +4,7 @@
     - user: 'rahul'
     - dotfiles_repo: 'https://github.com/rahulc810/dotfiles.git'
     - ssh_key: '.ssh/id_rsa'
+    - hdd: 'sdb'
 
   tasks:
     - name: "Install system packages"
