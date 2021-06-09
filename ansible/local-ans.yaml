@@ -9,7 +9,7 @@
     - name: "Install system packages"
       apt: 
         name:
-          - vim 
+          - vim.gtk3
           - bat
           - exa
           - podman
