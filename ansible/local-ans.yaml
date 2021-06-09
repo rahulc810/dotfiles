@@ -2,7 +2,7 @@
   become: yes
   vars:
     - user: 'rahul'
-    - dotfiles_repo: 'git@github.com:rahulc810/dotfiles.git'
+    - dotfiles_repo: 'https://github.com/rahulc810/dotfiles.git'
     - ssh_key: '.ssh/id_rsa'
 
   tasks:
