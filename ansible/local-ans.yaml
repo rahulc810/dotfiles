@@ -41,19 +41,19 @@
 
     - name: "Copy .vimrc"
       copy:
-        src: ./tmp-dotfiles/.vimrc
+        src: ./tmp-dotfiles/copy/.vimrc
         dest: "/home/{{ user }}/.vimrc"
         owner: "{{ user }}"
         group: "{{ user }}"
         mode: '0644'
 
-    - name: "Copy .aliases"
-      copy:
-        src: ./tmp-dotfiles/.aliases
-        dest: "/home/{{ user }}/.aliases"
-        owner: "{{ user }}"
-        group: "{{ user }}"
-        mode: '0644'
+ #   - name: "Copy .aliases"
+ #     copy:
+ #       src: ./tmp-dotfiles/.aliases
+ #       dest: "/home/{{ user }}/.aliases"
+ #       owner: "{{ user }}"
+ #       group: "{{ user }}"
+ #       mode: '0644'
 
     - name: "Load aliases in .bashrc file"
       blockinfile:
