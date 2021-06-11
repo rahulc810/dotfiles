@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="gparted.desktop" score="6" last-seen="1623232420"/>
+    <application id="org.gnome.Evince.desktop" score="2.125" last-seen="1622944435"/>
+    <application id="org.gnome.Extensions.desktop" score="4" last-seen="1623377111"/>
+    <application id="org.keepassxc.KeePassXC.desktop" score="14" last-seen="1623383758"/>
+    <application id="repoman.desktop" score="1" last-seen="1623146641"/>
+    <application id="gsmartcontrol.desktop" score="6.75" last-seen="1623122411"/>
+    <application id="org.gnome.gedit.desktop" score="24.375" last-seen="1623317523"/>
+    <application id="org.freedesktop.Piper.desktop" score="327" last-seen="1623374573"/>
+    <application id="org.gnome.Nautilus.desktop" score="86.75" last-seen="1623385439"/>
+    <application id="xpad.desktop" score="178.5" last-seen="1623370869"/>
+    <application id="org.gnome.meld.desktop" score="0" last-seen="1623219231"/>
+    <application id="me.kozec.syncthingtk.desktop" score="14" last-seen="1623385515"/>
+    <application id="org.gnome.seahorse.Application.desktop" score="1" last-seen="1623232903"/>
+    <application id="firefox.desktop" score="18069.875" last-seen="1623387033"/>
+    <application id="org.gnome.Terminal.desktop" score="4576.375" last-seen="1623387016"/>
+    <application id="virtualbox.desktop" score="185.375" last-seen="1623381501"/>
+    <application id="io.elementary.appcenter.desktop" score="2061.25" last-seen="1623385179"/>
+    <application id="org.gnome.DiskUtility.desktop" score="14" last-seen="1623219477"/>
+    <application id="rclone-browser.desktop" score="17" last-seen="1623382809"/>
+  </context>
+</application-state>

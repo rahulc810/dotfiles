@@ -20,6 +20,10 @@
           - xdotool
 #         - systemd-analyze
           - tree
+          - keepassxc
+          - software-properties-gtk
+            #sudo add-apt-repository ppa:openrazer/stable
+          - openrazer-meta
         state: latest
 
 #    - name: "Install Python packages"
