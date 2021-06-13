@@ -11,6 +11,7 @@ device_outputs = subprocess.run(device_cmd_arguments, stdout=subprocess.PIPE)
 device_obj = json.loads(device_outputs.stdout)
 
 FSTAB_TEMPLATE='UUID={} /media/{}/{} {} {} 0 0'
+FSTAB_TMP_TEMPLATE='/media/{}/{} {} none bind 0 0'
 
 def get_filesystem_string(fstype):
     if fstype == 'ntfs':
@@ -30,4 +31,7 @@ for d in device_obj['blockdevices']:
        for idx,p in enumerate(d['children']):
            fstype = p['fstype']
            label = p['label'] if p['label'] != 'null' else idx 
+           subprocess.run(['mkdir','-p','/media/{}/{}'.format(user_name,p['label'])])
            print(FSTAB_TEMPLATE.format(p['uuid'],user_name,p['label'],get_filesystem_string(fstype),get_fs_options(fstype)))
+           if p['label'] == 'tmp':
+              print(FSTAB_TMP_TEMPLATE.format(user_name,p['label']+'/tmp', p['label']))
