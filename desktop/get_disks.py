@@ -20,7 +20,7 @@ def get_filesystem_string(fstype):
 
 def get_fs_options(fstype):
     if fstype == 'ntfs':
-       return 'rw,auto,user,fmask=133,dmask=022,uid={},gid={}'.format(user_id,group_id)
+       return 'rw,auto,user,fmask=0033,dmask=0022,uid={},gid={}'.format(user_id,group_id)
     if fstype == 'exfat':
        return 'defaults,uid={},gid={}'.format(user_id,group_id)
     if fstype == 'ext4':
